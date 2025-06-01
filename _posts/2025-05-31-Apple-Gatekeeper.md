@@ -29,7 +29,9 @@ sqlite> select * FROM LSQuarantineEvent WHERE LSQuarantineEventIdentifier="F3A89
 F3A898BF-EEDA-4E67-B9A7-FC79FE5B5DDA|740254506.21065|com.apple.Safari|Safari||||0|||
 ```
 
-In the above block, we see the UUID being printed out `F3A898BF-EEDA-4E67-B9A7-FC79FE5B5DDA` which is the LSQuarantineEventIdentifier. We then have `740254506.21065` which is the LSQuarantineTimeStamp - the time stamp. Notice here this is not in the macOS epoch time like in the extended attribute. In the data base, the time stamp is in macOS absolute time. `com.apple.Safari` is the LSQuarantineAgentName - the app name that’s responsible for the quarantine event. `Safari` is the LSQuarantineAgentBundleIdentifier - the bundle name of the application. We then see a bunch of | which are other events in LSQuarantineEvent which are not present in our example. The next bit of information is the 0. This is the LSQuarantineTypeNumber. This will be a number from 0-5 indicating:
+In the above block, we see the UUID being printed out `F3A898BF-EEDA-4E67-B9A7-FC79FE5B5DDA` which is the LSQuarantineEventIdentifier. We then have `740254506.21065` which is the LSQuarantineTimeStamp - the time stamp. Notice here this is not in the macOS epoch time like in the extended attribute. 
+
+In the data base, the time stamp is in macOS absolute time. `com.apple.Safari` is the LSQuarantineAgentName - the app name that’s responsible for the quarantine event. `Safari` is the LSQuarantineAgentBundleIdentifier - the bundle name of the application. We then see a bunch of | which are other events in LSQuarantineEvent which are not present in our example. The next bit of information is the 0. This is the LSQuarantineTypeNumber. This will be a number from 0-5 indicating:
 
 0 - Web Download
 1 - Other Download
