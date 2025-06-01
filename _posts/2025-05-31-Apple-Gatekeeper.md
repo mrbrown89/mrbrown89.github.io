@@ -3,7 +3,7 @@ title: "A Brief Look at Apple’s Gatekeeper"
 date: 2025-05-31
 categories: [apple, mac, security]
 tags: [apple, mac, security]
-layout: post
+layout: single
 ---
 
 Apple has built several layers of security into macOS. The layers are made up of several programs which have evolved over various iterations of macOS. Let’s poke around with one of these programs which is responsible for code signing and download verification - Gatekeeper.

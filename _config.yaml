@@ -20,6 +20,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: post
+      layout: single
       author_profile: false
 
