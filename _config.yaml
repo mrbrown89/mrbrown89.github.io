@@ -17,6 +17,6 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: single
+      layout: post
       author_profile: false
 
