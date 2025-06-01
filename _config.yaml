@@ -1,0 +1,22 @@
+title: "Tech at the Studio"
+description: "Thoughts, projects, and walkthroughs in animation IT"
+baseurl: "" # Leave this empty unless deploying to a subpath
+url: "https://mrbrown.github.io" # Replace with your actual GitHub Pages URL
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "dark" # Dark mode
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: false
+
