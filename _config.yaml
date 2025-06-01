@@ -2,6 +2,9 @@ title: "Matt Brown | IT in Animation"
 description: "Thoughts, projects, and walkthroughs in animation IT"
 baseurl: ""
 url: "https://mrbrown89.github.io"
+social:
+  linkedin: www.linkedin.com/in/matt-brown-2a77b3283
+
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
