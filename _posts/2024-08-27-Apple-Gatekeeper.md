@@ -1,6 +1,6 @@
 ---
 title: "A Brief Look at Apple’s Gatekeeper"
-date: 2025-05-31
+date: 2024-08-27
 categories: [apple, mac, security]
 tags: [apple, mac, security]
 layout: single
