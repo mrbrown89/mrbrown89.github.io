@@ -6,6 +6,8 @@ tags: [mac, security]
 layout: single
 ---
 
+> This article was first posted in 2600 Magazine Winter 2024-2025.
+
 Apple has built several layers of security into macOS. The layers are made up of several programs which have evolved over various iterations of macOS. Let’s poke around with one of these programs which is responsible for code signing and download verification - Gatekeeper.
 
 With the release of Mac OS X 10.5 Leopard, Apple introduced File Quarantine. File Quarantine works by adding an extended attribute to files downloaded from the internet. 
