@@ -6,7 +6,7 @@ tags: [animation, salt]
 layout: single
 ---
 
-1 IT dude vs 60 machines. How on earth do I manage animation software deployments and upgrades to a fleet of render nodes and workstations? How do I keep them all the same? How can I do quickly to reduce down time and keep those renders flowing? SaltStack!
+1 IT dude vs 48 machines. How on earth do I manage animation software deployments and upgrades to a fleet of render nodes and workstations? How do I keep them all the same? How can I do quickly to reduce down time and keep those renders flowing? SaltStack!
 
 Our studio relies on a wide range of software — from 3ds Max and Blender to VLC and After Effects. Software changes are frequent. Sometimes changes are required between production and post-production. This can be upgrading After Effects or more simply deploying a codec to workstations. Between productions, I often need to update the entire software stack to prepare for the next project. This used to mean a lot of manual installs — time-consuming and prone to mismatch software. But with salt all that has changed! 
 
