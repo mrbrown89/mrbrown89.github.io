@@ -1,5 +1,5 @@
 ---
-title: "Put the Kettle on. Lets Have a Brew"
+title: "Put the Kettle on. Let's Have a Brew"
 date: 2025-06-17
 categories: [apple]
 tags: [jamf, brew, mac]
@@ -17,7 +17,7 @@ Even better, Workbrew gives me a nice UI where I can:
 
 Pretty cool, huh! 
 
-To deploy Workbrew I copied the API key install script from Workbrew and created a policy in Jamf to deploy it. I then downloaded the Workbrew package from Workbrew and uploaded it to Jamf. I created a policy to install the package along with the maintenance payload. I set this policy to be trigged with an event. I then edited the API script to run the Jamf policy command with the event flag to trigger the Workbrew package installer. Instead of scoping these policies to a smart group I targeted my work machine only. My work machine lives in a smart group containing all IT computers but we only want my machine to pick up the policies. Workbrew is changed per device so I don't want to end up in a pickle! To better target my machine and any other machine I later add to these policies with package installs I created an extension attribute to find machines with Workbrew installed:
+To deploy Workbrew I copied the API key install script from Workbrew and created a policy in Jamf to deploy it. I then downloaded the Workbrew package from Workbrew and uploaded it to Jamf. I created a policy to install the package along with the maintenance payload. I set this policy to be trigged with an event. I then edited the API script to run the Jamf policy command with the event flag to trigger the Workbrew package installer. Instead of scoping these policies to a smart group I targeted my work machine only. My work machine lives in a smart group containing all IT computers but we only want my machine to pick up the policies. Workbrew is charged per device so I don't want to end up in a pickle! To better target my machine and any other machine I later add to these policies with package installs I created an extension attribute to find machines with Workbrew installed:
 
 ```
 #!/bin/bash
@@ -29,9 +29,9 @@ else
 fi
 ```
 
-So to recap, I now have two policies. One to run the API script which needs to run first. The script then triggers another policy to install the Workbrew package. This second policy also runs the maintenance payload to find all devices with Workbrew installed. Nice!
+So to recap, I now have two policies. One to run the API script which needs to run first. The script then triggers another policy to install the Workbrew package. This second policy also runs the maintenance payload to find all devices with Workbrew installed.
 
-Now we need a smart group that I can target to install packages to. I said earlier my machine is in IT smart group but I don't want to install Workbrew to every machine in this group unless I later add them. So I created a smart group with the criteria of having the extension attribute of Workbrew as being installed and the device being in the IT smart group. Nice. Now I have a smart group containing devices in the IT smart group that have Workbrew installed. In the future if I need to scale this out to none IT devices i.e. developer macs, I can re-use the extension attribute in the same way against different smart groups. Whoop!
+Now we need a smart group that I can target to install packages to. Earlier I mentioned my machine is in the IT smart group but I don't want to install Workbrew to every machine in this group unless I later add them. So I created a smart group with the criteria of having the extension attribute of 'Workbrew' as being installed and the device being in the IT smart group. Nice. Now I have a smart group containing devices in the IT smart group that have Workbrew installed. In the future if I need to scale this out to none IT devices i.e. developer macs, I can re-use the extension attribute in the same way against different smart groups. Whoop!
 
 Now I need to get packages installed on my mac. I could manually install packages but I prefer to have thing automated because I'm a nerd and I like automation :D Now, I could create individual scripts to install packages and scope them out to my smart group like I did before but that could get messy when deploying them all in one go plus its a pain to keep creating policies every time I need a new package.
 
