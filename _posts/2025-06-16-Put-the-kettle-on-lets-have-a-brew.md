@@ -92,6 +92,6 @@ Now every time the Jamf binary does a policy run anything added to my script on 
 
 What about updates? For that I created another script in Jamf that is set to run on a monthly basis on my IT Workbrew smart group. 
 
-I love this type of work flow. I love being able to write stuff and commit it to GitHub :D such a nerd! 
+I'm only scratching the surface here so I'm excited to see what else I can do! 
 
 
