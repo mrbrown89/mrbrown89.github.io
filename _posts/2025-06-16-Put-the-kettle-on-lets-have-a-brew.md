@@ -6,9 +6,9 @@ tags: [jamf, brew, mac]
 layout: single
 ---
 
-I've been using Homebrew for years on my personal mac. When I started using a mac at work, brew was one of the first things I set up. Being a Jamf guy I created a policy that ran a script to install Homebrew to my mac, my mac VMs and test mac. It _kinda_ worked. I had problems with the `$PATH` and I was unable to install brew on my test machines during enrolment with tools like [Jamf Setup Manager](https://GitHub.com/jamf/Setup-Manager) because Homebrew wants to install to a user profile. To install packages I needed I created scripts in Jamf that were pushed out with policies. This just got messy. To solve this problem I started to use Workbrew.
+I've been using Homebrew for over a decade on my personal mac. When I started using a mac at work, brew was one of the first things I set up. Being a Jamf user I created a policy that ran a script to install Homebrew to my mac, my mac VMs and test mac. It _kinda_ worked. I had problems with the `$PATH` and I was unable to install brew on my test machines during enrolment with tools like [Jamf Setup Manager](https://GitHub.com/jamf/Setup-Manager) because Homebrew wants to install to a user profile. To install packages I needed I created scripts in Jamf that were pushed out with policies. This just got messy. To solve this problem I started to use Workbrew.
 
-Workbrew is very much like Homebrew but its made for enterprise scale, control and compliance. Workbrew allows me to use Jamf to automate installation of Workbrew and deployment of packages easily. 
+Workbrew is very much like Homebrew but its made for enterprise scale, control and compliance. With Workbrew I can use Jamf to automate installation of Workbrew and deploy packages easily. 
 
 Even better, Workbrew gives me a nice UI where I can:
 - See what packages are installed on each device
