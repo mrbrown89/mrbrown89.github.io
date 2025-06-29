@@ -95,3 +95,4 @@ What about updates? For that I created another script in Jamf that is set to run
 I'm only scratching the surface here so I'm excited to see what else I can do! 
 
 
+#Test
