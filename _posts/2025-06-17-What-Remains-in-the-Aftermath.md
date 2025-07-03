@@ -6,9 +6,9 @@ tags: [jamf, jamfprotect, security, mac]
 layout: single
 ---
 
-At Jamf Nation Live in London last year I attended   a talk that mentioned [Jamf Aftermath](https://github.com/jamf/aftermath). I have a habit of getting over excited about these sorts of things so when I got back to work I tried it out.
+At Jamf Nation Live in London 2024 I attended a talk that mentioned [Jamf Aftermath](https://github.com/jamf/aftermath). I have a habit of getting over excited about these sorts of things so when I got back to work I tried it out.
 
-What is aftermath? Aftermath is a Jamf tool that automates the collection of forensic data from a Mac after a suspected compromise—perfect for IR teams, IT admins, and nerds like me 😄 
+What is aftermath? Aftermath is a Jamf tool that automates the collection of forensic data from a Mac after a suspected compromise—perfect for IR teams and IT admins. 
 
 You can deploy Aftermath via MDM or install it manually. You can then trigger Aftermath manually or using a script in your MDM. I came across the [SOAR playbook](https://github.com/jamf/jamfprotect/tree/main/soar_playbooks) on the Jamf Protect GitHub [repo](https://github.com/jamf/jamfprotect) and thought I'd give it a go! Here's our work flow:
 
