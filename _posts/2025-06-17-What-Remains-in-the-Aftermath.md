@@ -12,7 +12,7 @@ What is aftermath? Aftermath is a Jamf tool that automates the collection of for
 
 You can deploy Aftermath via MDM or install it manually. You can then trigger Aftermath manually or using a script in your MDM. I came across the [SOAR playbook](https://github.com/jamf/jamfprotect/tree/main/soar_playbooks) on the Jamf Protect GitHub [repo](https://github.com/jamf/jamfprotect) and thought I'd give it a go! Here's our work flow:
 
-1. Analytic Triggeredd
+1. Analytic Triggered
  - The `high` file marker will be added to `/Library/Application Support/JamfProtect/groups/`
  - At a Jamf recon scan, the marker will be picked up with our extension attribute script that we deployed with our `Jamf Protect - Smart Group` extended attribute template.
  - Devices that have the extended attribute will be added to our `Jamf Protect: Aftermath` smart group.
@@ -27,7 +27,7 @@ You can deploy Aftermath via MDM or install it manually. You can then trigger Af
   - To upload to AWS the above script triggers another policy with the custom event `aws_creds` to download our AWS credentials from Jamf.
   - Our collect script will finish off by uninstalling the AWS binary and deleting our file marker in `/Library/Application Support/JamfProtect/groups/`.
   
-Lets break this down...
+Let's break this down...
 
 ## 1. Analytic Triggered
 
