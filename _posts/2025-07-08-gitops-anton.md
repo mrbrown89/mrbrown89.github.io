@@ -6,7 +6,7 @@ tags: [gitops, storage, salt]
 layout: single
 ---
 
-In IT, the difference between a “working system” and a resilient system is huge. Early on, I built a backup NAS for our team — affectionately called Anton (named after the computer in Silicon Valley). It started as a side project: ZFS on Debian, JBOD for data with NVMe for metadata and L2 ARC, SMB/NFS shares, dual 25 Gb/s networking, and even a few containers.
+In IT, the difference between a “working system” and a resilient system is huge. Early on, I built a backup NAS for our team — affectionately called Anton (named after the computer in Silicon Valley). It started as a side project: ZFS on Debian, JBOD for data with NVMe for metadata and L2 ARC, SMB/NFS shares, CTDB, dual 25 Gb/s networking, and even a few containers.
 
 At first, I made changes directly on the box — a script here, a tweak there. If something broke, it wasn’t the end of the world. But over time, uptime and reliability became just as important as storage capacity. Questions started surfacing:
 
