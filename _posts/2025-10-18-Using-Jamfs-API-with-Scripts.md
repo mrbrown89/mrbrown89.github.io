@@ -291,7 +291,9 @@ Now I can scope these scripts out to devices with confidence... he says...
 
 To sum up here is a diagram that shows the work flow:
 
-dev branch  ---> testing branch  --->  main branch
-   |                |                     |
-   v                v                     v
- local edits   lint and deploy to Jamf Dev   deploy to Jamf Prod
+<pre>
+dev branch   ───▶   testing branch   ───▶   main branch
+    │                     │                     │
+    ▼                     ▼                     ▼
+local edits   lint and deploy to Jamf Dev   deploy to Jamf Prod
+</pre>
