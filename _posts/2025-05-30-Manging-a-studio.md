@@ -22,5 +22,5 @@ I started by creating a Debian VM and setting it up as a Salt master. I then cre
 
 By running these scripts against minions — individually or as node groups — I can roll out updates at scale or build new machines quickly. Very handy when new render nodes arrive!
 
-Salt has taken several weeks worth of work to upgrade machines and reduced it down to a matter of hours. I simply run my scripts in a `screen` session on my server and walk away. The best bit? I'm using Linux to manage my windows machines :D
+Salt has taken several weeks worth of work to upgrade machines and reduced it down to a matter of hours. I simply run my scripts in a `screen` session on my server and walk away. The best bit? I'm using Linux to manage my windows machines 😄
 

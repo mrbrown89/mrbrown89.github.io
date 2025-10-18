@@ -60,8 +60,6 @@ It wasn't plain sailing during my deployment, however. I was having a right nigh
 
 I explicitly set the path to the AWS CLI binary `/usr/local/bin/aws` instead of relying on `$PATH`, which behaves inconsistently when scripts run as root via Jamf. I also fixed credential handling — the original script assumed credentials were in the user’s `~/.aws`, which fails under root. I changed it to pull credentials from `/opt/.aws` and copy them into `/var/root/.aws`, where the AWS CLI expects them in root context.
 
-
-
 ## Bonus Points
 
 If you use Jamf Security Cloud, why not utilise that to lock the internet down on the infected device? You can scope our smart group to a restricted group in Security Cloud. Keep in mind though that this smart group is created using an extension attribute which is deleted when the Aftermath collection script is run so make sure to remove or comment out:
