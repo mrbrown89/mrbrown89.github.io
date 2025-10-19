@@ -24,6 +24,6 @@ Here’s the flow we use today:
 - Review: Changes are discussed via PRs before merging into main. A tag marks the release for easy rollback.
 - Deployment: Anton (running a local Salt master) pulls the latest repo. I always run with test=true first to validate before applying for real.
 
-This approach is slower than logging in and editing configs directly — but it’s also safer, repeatable, and rebuildable. If Anton ever went down, we could recreate it in the exact same state from Git.
+This approach is slower than logging in and editing configs directly but it’s also safer, repeatable, and rebuildable. If Anton ever went down, we could recreate it in the exact same state from Git.
 
 Moving to GitOps with Salt has been one of the best decisions for reliability and peace of mind. It's also fun :D 
