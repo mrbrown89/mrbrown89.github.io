@@ -5,7 +5,9 @@ author_profile: false
 
 👋 Hello, I’m Matt
 
-From Apple devices and Jamf management to backups, render nodes, SaltStack, and switches if automation makes it smoother, then it’s my jam!
+Studio Systems Admin in a small animation studio posting ramblings about Apple stuff, storage, MDM, animation and rendering.
+
+All the stuff post here do not represent my employer and are all my own thoughts, opinions and ramblings.  
 
 #### Contact
 
