@@ -3,7 +3,7 @@ layout: home
 author_profile: false
 ---
 
-👋 Hello, I’m Matt
+👋 Hey, I’m Matt
 
 Studio Systems Admin in a small animation studio posting ramblings about Apple stuff, storage, MDM, animation and rendering.
 
