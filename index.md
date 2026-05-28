@@ -1,6 +1,6 @@
 ---
 layout: home
-author_profile: false
+author_profile: true
 ---
 
 # Hey, I’m Matt
