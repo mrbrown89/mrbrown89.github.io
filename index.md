@@ -11,13 +11,9 @@ I spend most of my time in the terminal writing scripts, testing workflows in VM
 
 I also build and manage Linux NAS systems using infrastructure as code.
 
----
-
 ## Writing
 
 The posts here are my own thoughts, experiments and notes. They do not represent my employer.
-
----
 
 ## Contact
 
