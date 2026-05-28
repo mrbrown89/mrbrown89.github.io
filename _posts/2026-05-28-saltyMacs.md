@@ -2,7 +2,7 @@
 title: "saltyMacs"
 date: 2026-05-28
 categories: [macos, gitops, infrastructure]
-tags: [gitops, saltstack, mdm, launchd, automation]
+tags: [gitops, saltstack, mdm, launchd, automation, saltyMacs]
 layout: single
 ---
 
