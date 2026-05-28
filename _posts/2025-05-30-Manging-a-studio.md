@@ -1,8 +1,8 @@
 ---
 title: "Managing a Studio with Salt"
 date: 2025-05-30
-categories: [automation]
-tags: [animation, salt]
+categories: [studio, infrastructure]
+tags: [saltstack, automation, pipeline, linux]
 layout: single
 ---
 

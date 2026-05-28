@@ -1,8 +1,8 @@
 ---
-title: "Put the Kettle on. Let's Have a Brew"
+title: "Put the Kettle on — Let's Have a Brew"
 date: 2025-06-17
-categories: [apple]
-tags: [jamf, brew, mac]
+categories: [macos]
+tags: [brew, macos, jamf, automation]
 layout: single
 ---
 

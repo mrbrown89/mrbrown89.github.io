@@ -1,8 +1,8 @@
 ---
 title: "What Remains in the Aftermath"
 date: 2025-06-17
-categories: [apple]
-tags: [jamf, jamfprotect, security, mac]
+categories: [macos, security]
+tags: [jamf, jamfprotect, macos, security]
 layout: single
 ---
 
