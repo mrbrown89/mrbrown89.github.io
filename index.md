@@ -3,7 +3,7 @@ layout: home
 author_profile: false
 ---
 
-# 👋 Hey, I’m Matt
+# Hey, I’m Matt
 
 I’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
 
