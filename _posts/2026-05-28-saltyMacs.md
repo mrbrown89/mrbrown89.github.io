@@ -111,4 +111,4 @@ Instead of relying on large numbers of policies and scripts, the Mac continuousl
 
 I plan to write a few smaller posts showing how I’ve used saltyMacs to solve specific operational problems.
 
-I’ve also built a smaller companion project called saltyMac, which is designed for quickly spinning up macOS VMs with Tart and applying Salt states for testing and development workflows.
+I’ve also built a smaller companion project called [saltyMac](https://github.com/mrbrown89/saltyMac), which is designed for quickly spinning up macOS VMs with Tart and applying Salt states for testing and development workflows.
