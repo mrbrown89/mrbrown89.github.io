@@ -1,8 +1,8 @@
 ---
 title: "Cheffin IT"
 date: 2026-04-20
-categories: [general]
-tags: [gitops]
+categories: [studio, infrastructure]
+tags: [gitops, automation, saltstack, nas]
 layout: single
 ---
 

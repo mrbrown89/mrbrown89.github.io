@@ -1,8 +1,8 @@
 ---
 title: "Using Jamf’s API with Scripts"
 date: 2025-10-18
-categories: [apple]
-tags: [gitops, jamf, salt]
+categories: [macos, infrastructure]
+tags: [jamf, api, scripting, saltstack, automation]
 layout: single
 ---
 
