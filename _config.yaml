@@ -15,6 +15,7 @@ plugins:
 author:
   name: "Matt Brown"
   bio: "macOS, Linux, GitOps, infrastructure systems."
+  avatar: "/assets/images/profile.png"
   links:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
