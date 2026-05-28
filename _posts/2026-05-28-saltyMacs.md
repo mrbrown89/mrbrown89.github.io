@@ -1,8 +1,8 @@
 ---
 title: "saltyMacs"
 date: 2026-05-28
-categories: [salt]
-tags: [gitops, apple, jamf]
+categories: [apple]
+tags: [gitops, salt, jamf]
 layout: single
 ---
 
