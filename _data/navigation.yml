@@ -2,9 +2,6 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Writing"
-    url: /
-
   - title: "Categories"
     url: /categories/
 
