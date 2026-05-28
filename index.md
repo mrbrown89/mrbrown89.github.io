@@ -5,11 +5,11 @@ author_profile: false
 
 👋 Hey, I’m Matt
 
-I’m a macOS and Linux engineer focused on building simple, repeatable systems using IaC and GitOps.
+I’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
 
-I spend most of my time in the terminal writing scripts, testing workflows in VMs, and using tools like Salt, Ansible, Terraform, and MDM platforms to manage Macs the same way we manage code. I also build and manage Linux NAS systems using infrastructure as code.
+I spend most of my time in the terminal writing scripts, testing workflows in VMs, and using tools like Salt, Ansible, Terraform, and MDM platforms to manage Macs like code. I also build and manage Linux NAS systems using infrastructure as code.
 
-All the stuff post here do not represent my employer and are all my own thoughts, opinions and ramblings.  
+The posts here are my own thoughts, experiments and notes. They do not represent my employer. 
 
 #### Contact
 
