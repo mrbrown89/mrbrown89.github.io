@@ -10,7 +10,7 @@ layout: single
 
 I’ve always been a fan of MDM systems, and I’ve also spent a lot of time using SaltStack to manage both my Linux NAS infrastructure and Windows machines used for animation workloads.
 
-On macOS, my workflow originally relied heavily on MDM policies for things like printer deployment, CIS benchmarking, app installs, and configuration management. While this worked, over time I started feeling that I didn’t have the control I wanted. I saw odd things happen like users loosing printers, policies saying they completed successfully when the hadn’t. 
+On macOS, my workflow originally relied heavily on MDM policies for things like printer deployment, CIS benchmarking, app installs, and configuration management. While this worked, over time I started feeling that I didn’t have the control I wanted. I saw odd things happen like users losing printers, policies saying they completed successfully when they hadn’t.
 
 I wanted something more declarative, version controlled, and easier to reason about.
 
@@ -33,11 +33,13 @@ The lifecycle starts with Salt being deployed via MDM alongside a bootstrap scri
 
 This creates a self managing system where machines continuously enforce their desired state without relying on persistent connectivity to central infrastructure.
 
-Architecture
+---
+
+# Architecture
 
 saltyMacs is built from five main components.
 
-1. Update script
+## 1. Update script
 
 The update script acts as the orchestration layer.
 
@@ -49,7 +51,9 @@ It:
 * records execution results
 * handles logging and error reporting
 
-2. Git repository
+---
+
+## 2. Git repository
 
 The repository contains:
 
@@ -60,24 +64,29 @@ The repository contains:
 * naming standards
 * custom grains and modules
 
-3. Salt in local mode
+---
+
+## 3. Salt in local mode
 
 Instead of using a central Salt master, saltyMacs uses local execution:
 
-```
+```bash
 salt-call --local state.apply
 ```
 
 This keeps the system lightweight while still benefiting from Salt’s state engine and declarative configuration model.
 
+---
 
-4. LaunchDaemon
+## 4. LaunchDaemon
 
 A LaunchDaemon schedules execution and ensures state enforcement continues automatically after reboots or user logouts.
 
-The Mac effectively becomes self healing over time.
+The Mac effectively becomes self-healing over time.
 
-5. Logging and state tracking
+---
+
+## 5. Logging and state tracking
 
 Each run records:
 
@@ -86,7 +95,11 @@ Each run records:
 * state results
 * errors and exit codes
 
-This data can then be surfaced back into Jamf using extension attributes and used for workflows, reporting, or troubleshooting. Whilst playing with Fleet I used the reporting feature to use OS Query to pull data from the logs.
+This data can then be surfaced back into Jamf using extension attributes and used for workflows, reporting, or troubleshooting.
+
+While working with Fleet, I used its reporting feature with OSQuery to pull data from logs.
+
+---
 
 Each cycle follows the same sequence:
 
@@ -99,7 +112,9 @@ Each cycle follows the same sequence:
 
 If another run is already active, the process exits safely instead of overlapping.
 
-saltyMacs helped solve a few issues I kept running into with traditional MDM heavy workflows:
+---
+
+saltyMacs helped solve a few issues I kept running into with traditional MDM-heavy workflows:
 
 * configuration became fully version controlled
 * logic moved out of the MDM layer
@@ -111,4 +126,4 @@ Instead of relying on large numbers of policies and scripts, the Mac continuousl
 
 I plan to write a few smaller posts showing how I’ve used saltyMacs to solve specific operational problems.
 
-I’ve also built a smaller companion project called [saltyMac](https://github.com/mrbrown89/saltyMac), which is designed for quickly spinning up macOS VMs with Tart and applying Salt states for testing and development workflows.
+I’ve also built a smaller companion project called saltyMac, which is designed for quickly spinning up macOS VMs with Tart and applying Salt states for testing and development workflows.
