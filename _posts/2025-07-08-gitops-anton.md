@@ -2,7 +2,7 @@
 title: "Salting GitOps — Managing a NAS with Salt and GitOps"
 date: 2025-07-06
 categories: [infrastructure, gitops]
-tags: [saltstack, gitops, nas, linux, automation]
+tags: [saltstack, gitops, nas, linux]
 layout: single
 ---
 

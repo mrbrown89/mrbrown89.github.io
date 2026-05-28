@@ -2,7 +2,7 @@
 title: "Put the Kettle on — Let's Have a Brew"
 date: 2025-06-17
 categories: [macos]
-tags: [brew, macos, jamf, automation]
+tags: [brew, jamf, automation]
 layout: single
 ---
 

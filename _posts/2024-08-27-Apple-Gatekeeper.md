@@ -2,7 +2,7 @@
 title: "A Brief Look at Apple’s Gatekeeper"
 date: 2024-08-27
 categories: [macos, security]
-tags: [macos, gatekeeper, security]
+tags: [macos, security]
 layout: single
 ---
 

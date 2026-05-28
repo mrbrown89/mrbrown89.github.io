@@ -2,7 +2,7 @@
 title: "Using Jamf’s API with Scripts"
 date: 2025-10-18
 categories: [macos, infrastructure]
-tags: [jamf, api, scripting, saltstack, automation]
+tags: [jamf, api, scripting, automation]
 layout: single
 ---
 
