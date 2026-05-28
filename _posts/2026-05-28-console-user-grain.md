@@ -50,6 +50,7 @@ You can find the grain and a little README in my [saltyExtensions](https://githu
 
 I use this grain on my personal mac for installing packages via brew for example here is part of my brew state file that handles tap installations:
 
+{% raw %}
 ```
 {% set brew = pillar.get('brew', {}) %}
 {% set brew_bin = '/opt/homebrew/bin/brew' %}
@@ -69,10 +70,12 @@ brew_tap_{{ tap | replace('/', '_') }}:
 
 {% endfor %}
 ```
+{% endraw %}
 
 You can see at the start of the state I declare `console_user` using the grain:
 
+{% raw %}
 ```
 {% set console_user = grains['console_user'] %}
 ```
-
+{% endraw %}
