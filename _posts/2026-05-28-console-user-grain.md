@@ -15,15 +15,16 @@ During my Jamf 400 course one of the tasks we had to do was to find the console 
 scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }'
 ```
 
-Salt doesn’t have a built in grain for the active macOS console user, so I wrote a small Python grain to retrieve it:
+Salt doesn’t have a built in grain for the active macOS console user, so I wrote a small Python grain to retrieve it. I've also added the console user's UID.
 
 ```
 import subprocess
+import pwd
 
 
 def console_user():
     """
-    Return the currently logged in console user on macOS.
+    Return the currently logged in console user and UID on macOS.
     """
 
     try:
@@ -32,13 +33,17 @@ def console_user():
             text=True
         ).strip()
 
+        uid = pwd.getpwnam(user).pw_uid
+
         return {
-            "console_user": user
+            "console_user": user,
+            "console_uid": uid
         }
 
     except Exception:
         return {
-            "console_user": None
+            "console_user": None,
+            "console_uid": None
         }
 ```
 
