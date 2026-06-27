@@ -3,9 +3,7 @@ layout: home
 author_profile: true
 ---
 
-# Hey, I’m Matt
-
-I’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
+’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
 
 I spend most of my time in the terminal writing scripts, testing workflows in VMs, and using tools like Salt, Ansible, Terraform, and MDM platforms to manage Macs like code.
 

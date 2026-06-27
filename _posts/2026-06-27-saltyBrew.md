@@ -1,6 +1,6 @@
 ---
 title: "saltyBrew"
-date: 2026-05-28
+date: 2026-06-27
 categories: [macos, gitops, saltyMacs]
 tags: [gitops, saltstack, mdm, launchd, automation]
 layout: single
