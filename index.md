@@ -3,7 +3,7 @@ layout: home
 author_profile: true
 ---
 
-’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
+I’m a macOS and Linux engineer focused on building simple, repeatable systems using infrastructure as code and GitOps.
 
 I spend most of my time in the terminal writing scripts, testing workflows in VMs, and using tools like Salt, Ansible, Terraform, and MDM platforms to manage Macs like code.
 
